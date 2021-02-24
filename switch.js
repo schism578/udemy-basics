@@ -1,22 +1,24 @@
-let num = 50;
+let num = 43;
 
 //switch structure
-switch(num) {
-    case 1:
+switch(true) {
+    case num == 1:
         console.log('The number is one');
-    //If condition proves true, switch is ended with 'break'
     break;
-    case 2:
+    case num == 2:
         console.log('The number is two');
     break;
-    case 3:
+    case num == 3:
         console.log('The number is three');
     break;
-    case 4:
+    case num == 4:
         console.log('The number is four');
+    break;
+    case (num > 40):
+        console.log('The number is greater than 40');
     break;
     default:
         console.log('num has a value not covered by the switch structure');
-    //not necessary to break after 'default' statement but did so for repetition
     break;
 }
+    //not necessary to break after 'default' statement but did so for repetition
