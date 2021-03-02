@@ -1,4 +1,4 @@
-//convert km to mi function
+//convert mi to km function
 let conversion = function(miles) {
     let kiloMeters = (miles / 0.62137).toFixed(2);
     return miles + ' miles equals ' + kiloMeters + ' kilometers';
