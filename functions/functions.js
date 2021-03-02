@@ -15,7 +15,14 @@ let sum = function() {
     let num2 = 3;
     let sum = num1 + num2;
 
-    console.log('The total of ' + num1 + ' and ' + num2 + ' is ' + sum)
+    //Replaced this as return statement below: console.log('The total of ' + num1 + ' and ' + num2 + ' is ' + sum)
+    return 'The total of ' + num1 + ' and ' + num2 + ' is ' + sum;     //This returns/prints/displays the concatenated string with results
 }
 
-sum();
+//sum();
+//console.log(sum());    //returns 'undefined'
+
+//Declare a new variable:
+let total = sum;
+//Call the new variable as a function:
+console.log(total());
