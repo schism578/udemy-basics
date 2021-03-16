@@ -43,3 +43,5 @@ let numArray5 = [3, 7, 6];
 let [number1, ,number2] = numArray5;
 
 console.log(number1 + ' and ' + number2);    //returns '3 and 6' because the destructuring statement skips the second element in the array
+
+console.log("Changing some stuff to create a new commit and push");
