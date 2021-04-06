@@ -21,10 +21,28 @@ function Student() {
     this.firstName = "Jack";
     //This can be achieved differently: this.firstName = first;
 
+    this.hello = function() {
+        console.log("Hello " + this.firstName + " and welcome to constructors")
+    }
+
 }
+
+/*
+The above CONSTRUCTOR can be written to be dynamic by passing a parameter to the constructor function and asserting that later as below:
+function Student(first) {
+    this.firstName = first;
+    //This can be achieved differently: this.firstName = first;
+
+}
+
+let student3 = new Student("Mark");
+
+console.log(student3.firstName);  //returns: Mark
+*/
 
 let student3 = new Student();
 //And per the comment above: let student1 = new Student("Jack");
 
 
 console.log(student3.firstName);  //returns: Jack
+student3.hello();  //returns: Hello Jack and welcome to constructors
