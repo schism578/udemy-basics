@@ -19,8 +19,12 @@ student.hello(); //added this after creating concatenation with reference to 'th
 //CONSTRUCTOR: begins with capital letter (not incorrect)
 function Student() {
     this.firstName = "Jack";
+    //This can be achieved differently: this.firstName = first;
+
 }
 
-let student1 = new Student();
+let student3 = new Student();
+//And per the comment above: let student1 = new Student("Jack");
 
-console.log(student1.firstName);  //returns: Jack
+
+console.log(student3.firstName);  //returns: Jack
